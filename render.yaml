@@ -1,9 +1,7 @@
-
 services:
   - type: web
-    name: invest-assistant-bot
+    name: investment-bot
     env: python
-    plan: free
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "python main.py"
     runtime: python3.10
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
